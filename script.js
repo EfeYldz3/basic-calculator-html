@@ -20,16 +20,8 @@ function clearDisplay() {
 
 function calculate() {
     try {
-        if(display.value == 666) {
-            open("https://quickabdest.com/", "_blank");
-        }
-        else if (display.value == 777) {
-            open("", "")
-        }
-        else {
-            display.value = eval(display.value);
-            clickTime = 0;
-        }
+        display.value = eval(display.value);
+        clickTime = 0;
     }
     catch {
         display.value = "Missing Input";
